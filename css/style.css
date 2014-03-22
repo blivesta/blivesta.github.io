@@ -1,0 +1,118 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 150%;
+	color: #000;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover{
+	color: #999;
+	text-decoration: none;
+}
+/* header
+-------------------------------------------------------------------------------*/
+.site-header {
+	height: 100%;
+	width: 180px;
+	position: fixed;
+	border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color: #bbb;
+	background-image: url(../images/common/bg.jpg);
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+.site-logo {
+	position: absolute;
+	left: 40px;
+	top: 100px;
+}
+
+/* main
+-------------------------------------------------------------------------------*/
+.site-main  {
+	position: relative;
+	height: 100%;
+	margin-left: 340px;
+	padding-top:100px;
+}
+.site-main h1{
+  position: fixed;
+  top:210px;
+  left:80px;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 1;
+  margin: 0;
+  padding:0;
+  letter-spacing: -0.05em;
+  -moz-transform:    rotate( 90deg ); 
+  -webkit-transform: rotate( 90deg );
+  -o-transform:      rotate( 90deg );
+  -ms-transform:     rotate( 90deg );
+  transform:         rotate( 90deg );
+}
+.site-update {
+	position: absolute;
+	left: 20px;
+	top: 10px;
+	font-size: 11px;
+}
+.site-block{
+	background-image: url(../images/common/section-bg.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding:20px;
+}
+.site-block:last-child{
+  margin-bottom: 160px;
+}
+.site-nav {
+	line-height: 200%;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+.site-nav ul{
+	padding: 0px 5px;
+	margin: 0;
+	list-style: none;
+}
+.site-nav li a{
+	font-weight: normal;
+}
+.site-fav{
+  width:360px;
+}
+.site-copyright {
+	font-size: 11px;
+	position: fixed;
+  top:530px;
+  left:165px;
+  -moz-transform:    rotate( 90deg ); 
+  -webkit-transform: rotate( 90deg );
+  -o-transform:      rotate( 90deg );
+  -ms-transform:     rotate( 90deg );
+  transform:         rotate( 90deg );
+}
+
+/* footer
+-------------------------------------------------------------------------------*/
+.site-footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height:148px;
+  width: 100%;
+	background-image: url(../images/common/footer-bg.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
