@@ -4,7 +4,6 @@ body {
 	width: 100%;
 }
 body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 150%;
 	color: #000;
@@ -75,28 +74,25 @@ a:hover{
 .site-block:last-child{
   margin-bottom: 160px;
 }
+.site-block-title{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 .site-nav {
 	line-height: 200%;
 	font-size: 14px;
-	margin: 0;
-	padding: 0;
 }
 .site-nav ul{
 	padding: 0px 5px;
-	margin: 0;
+  margin: 0;
 	list-style: none;
-}
-.site-nav li a{
-	font-weight: normal;
-}
-.site-fav{
-  width:360px;
 }
 .site-copyright {
 	font-size: 11px;
 	position: fixed;
   top:530px;
-  left:165px;
+  left:155px;
   -moz-transform:    rotate( 90deg ); 
   -webkit-transform: rotate( 90deg );
   -o-transform:      rotate( 90deg );
