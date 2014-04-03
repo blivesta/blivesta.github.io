@@ -1,114 +1,134 @@
 html,
 body {
-	height: 100%;
-	width: 100%;
+  width: 100%;
+  height: 100%;
 }
 body {
-	font-size: 13px;
-	line-height: 150%;
-	color: #000;
+    color: #111;
+  font-size: 13px;
+  line-height: 150%;
+
 }
 a {
-	color: #000;
-	text-decoration: none;
+  color: #111;
+  text-decoration: none;
 }
 a:hover{
-	color: #999;
-	text-decoration: none;
+  color: #999;
+  text-decoration: none;
 }
 /* header
 -------------------------------------------------------------------------------*/
 .site-header {
-	height: 100%;
-	width: 180px;
-	position: fixed;
-	border-right-width: 1px;
-	border-right-style: dotted;
-	border-right-color: #bbb;
-	background-image: url(../images/common/bg.jpg);
-	background-repeat: repeat-y;
-	background-position: left top;
+  position: absolute;
+  width: 180px;
+  height: 100%;
+  border-right-width: 1px;
+  border-right-style: dotted;
+  border-right-color: #bbb;
+  background-image: url(../images/common/bg.jpg);
+  background-position: left top;
+  background-repeat: repeat-y;
 }
 .site-logo {
-	position: absolute;
-	left: 40px;
-	top: 100px;
+  position: absolute;
+  top: 100px;
+  left: 40px;
 }
 
 /* main
 -------------------------------------------------------------------------------*/
 .site-main  {
-	position: relative;
-	height: 100%;
-	margin-left: 340px;
-	padding-top:100px;
+  position: relative;
+  margin-left: 330px;
+  padding-top: 100px;
 }
 .site-main h1{
-  position: fixed;
+  position: absolute;
   top:210px;
-  left:80px;
-  font-weight: bold;
-  font-size: 100px;
-  line-height: 1;
+  left:-235px;
   margin: 0;
   padding:0;
   letter-spacing: -0.05em;
-  -moz-transform:    rotate( 90deg ); 
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 1;
   -webkit-transform: rotate( 90deg );
-  -o-transform:      rotate( 90deg );
-  -ms-transform:     rotate( 90deg );
-  transform:         rotate( 90deg );
+      -ms-transform: rotate( 90deg );
+          transform: rotate( 90deg );
 }
 .site-update {
-	position: absolute;
-	left: 20px;
-	top: 10px;
-	font-size: 11px;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  font-size: 11px;
 }
 .site-block{
-	background-image: url(../images/common/section-bg.png);
-	background-repeat: no-repeat;
-	background-position: left top;
-	padding:20px;
+  position: relative;
+  padding:20px;
 }
 .site-block:last-child{
   margin-bottom: 160px;
 }
+.site-block-border{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 10px;
+  border-top:1px solid #111;
+}
 .site-block-title{
-  font-size: 16px;
-  font-weight: bold;
   margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 16px;
 }
 .site-nav {
-	line-height: 200%;
-	font-size: 14px;
+  font-size: 14px;
+  line-height: 200%;
 }
 .site-nav ul{
-	padding: 0px 5px;
   margin: 0;
-	list-style: none;
+  padding: 0 5px;
+  list-style: none;
+}
+.col-12{
+  padding: 10px 0;
+}
+.inkan{
+  margin-right: 10px;
+  padding:5px;
+  border:3px solid #111;
+  border-radius: 50%; 
+  font-size: 22px;
+  font-family: serif;
+}
+.sta{
+  padding:5px;
+  padding-top: 0;
+  letter-spacing: -0.05em;
+  font-size: 18px;
 }
 .site-copyright {
-	font-size: 11px;
-	position: fixed;
-  top:530px;
-  left:155px;
-  -moz-transform:    rotate( 90deg ); 
+  position: absolute;
+  top:550px;
+  left:-190px;
+  margin: 0;
+  width:200px;
+  font-size: 11px;
   -webkit-transform: rotate( 90deg );
-  -o-transform:      rotate( 90deg );
-  -ms-transform:     rotate( 90deg );
-  transform:         rotate( 90deg );
+      -ms-transform: rotate( 90deg );
+          transform: rotate( 90deg );
 }
 
-/* footer
+/* dandara
 -------------------------------------------------------------------------------*/
-.site-footer{
+.shape-triangle{
   position: fixed;
   bottom: 0;
-  left: 0;
-  height:148px;
-  width: 100%;
-	background-image: url(../images/common/footer-bg.png);
-	background-repeat: repeat-x;
-	background-position: left top;
+  width: 0;
+  height: 0;
+  border-top: 180px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 180px solid #111;
+  border-left: 100px solid transparent; 
 }
