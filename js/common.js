@@ -15,7 +15,7 @@ var dandara = function(){
       });
     }
   }
-}
+};
 
 $(document).ready(function() {
   $('.mixtype').mixtype({
