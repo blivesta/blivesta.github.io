@@ -26,9 +26,6 @@ a:hover{
   border-right-width: 1px;
   border-right-style: dotted;
   border-right-color: #bbb;
-  background-image: url(../images/common/bg.jpg);
-  background-position: left top;
-  background-repeat: repeat-y;
 }
 .site-logo {
   position: absolute;
@@ -131,4 +128,21 @@ a:hover{
   border-right: 100px solid transparent;
   border-bottom: 180px solid #111;
   border-left: 100px solid transparent; 
+}
+
+/* ruler
+-------------------------------------------------------------------------------*/
+.ruler{ }
+.ruler-scale{
+  position: fixed;
+  top: 0;
+  width:5px;
+  height: 1px;
+  background-color: #111;
+}
+.ruler-scale:nth-child(odd){
+  width:7px;
+}
+.ruler-scale:nth-child(10n+1){
+  width:10px;
 }

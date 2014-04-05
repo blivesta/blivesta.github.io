@@ -7,13 +7,29 @@ var dandara = function(){
     var $triangle = $('.shape-triangle');
     var $triangleWidth = $triangle.outerWidth();
     var maxNumD = Math.ceil($windowWidth / $triangleWidth);
-    for (var i = 0; i < maxNumD; i++) {
+    for (var i = 1; i < maxNumD; i++) {
       var $triangleClone = $triangle.clone();
       $('.dandara').append($triangleClone);
       $triangleClone.css({
         'left' : i * $triangleWidth
       });
     }
+  }
+};
+
+var ruler = function(){
+  $('.ruler').remove();
+  var $windowHeight = $(window).height();
+  $('body').append('<div class="ruler"><div class="ruler-scale"></div></div>');
+  var $scale = $('.ruler-scale');
+  var space = 5; 
+  var maxNumR = Math.ceil($windowHeight / space);
+  for (var i = 1; i < maxNumR; i++) {
+    var $scaleClone = $scale.clone();
+    $('.ruler').append($scaleClone);
+    $scaleClone.css({
+      'top' : i * space
+    });
   }
 };
 
@@ -25,9 +41,11 @@ $(document).ready(function() {
   $("body").clickstream({
     inSpeed: 1000
   });
-  dandara.call();   
+  dandara.call();
+  ruler.call();
 });
 
 $(window).resize(function() {
   dandara.call();
+  ruler.call();
 });
