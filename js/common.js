@@ -39,7 +39,7 @@ $(document).ready(function() {
     time: 60
   });
   $("body").clickstream({
-    inSpeed: 1000
+    inSpeed: 2000
   });
   dandara.call();
   ruler.call();
