@@ -36,10 +36,11 @@ var ruler = function(){
 $(document).ready(function() {
   $('.mixtype').mixtype({
     speed: 20,
-    time: 60
+    time:  60
   });
   $("body").clickstream({
-    inSpeed: 2000
+    inSpeed: 3000,
+    inDelay: 1000
   });
   dandara.call();
   ruler.call();
