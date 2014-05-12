@@ -4,9 +4,7 @@ body {
   height: 100%;
 }
 body {
-  color: #111;
-  font-size: 13px;
-  line-height: 150%;
+  line-height: 1.5;
 }
 a {
   color: #111;
@@ -36,28 +34,8 @@ a:hover{
 -------------------------------------------------------------------------------*/
 .site-main  {
   position: relative;
-  margin-left: 330px;
-  padding-top: 100px;
-}
-.site-main h1{
-  position: absolute;
-  top:210px;
-  left:-235px;
-  margin: 0;
-  padding:0;
-  letter-spacing: -0.05em;
-  font-weight: bold;
-  font-size: 96px;
-  line-height: 1;
-  -webkit-transform: rotate( 90deg );
-      -ms-transform: rotate( 90deg );
-          transform: rotate( 90deg );
-}
-.site-update {
-  position: absolute;
-  top: 10px;
-  left: 30px;
-  font-size: 11px;
+  margin-left: 200px;
+  padding-top: 55px;
 }
 .site-block{
   position: relative;
@@ -66,82 +44,13 @@ a:hover{
 .site-block:last-child{
   margin-bottom: 160px;
 }
-.site-block-border{
-  position: absolute;
-  top:0;
-  left:0;
-  width: 10px;
-  border-top:1px solid #111;
-}
 .site-block-title{
   margin-bottom: 5px;
-  font-weight: bold;
-  font-size: 16px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  letter-spacing: .08em;
 }
 .site-nav {
-  font-size: 14px;
-  line-height: 200%;
-}
-.site-nav ul{
-  margin: 0;
-  padding: 0 5px;
-  list-style: none;
-}
-.col-12{
-  padding: 10px 0;
-}
-.inkan{
-  margin-right: 10px;
-  padding:5px;
-  border:3px solid #111;
-  border-radius: 50%; 
-  font-size: 22px;
-  font-family: serif;
-}
-.sta{
-  padding:5px;
-  padding-top: 0;
-  letter-spacing: -0.05em;
-  font-size: 18px;
-}
-.site-copyright {
-  position: absolute;
-  top:550px;
-  left:-190px;
-  margin: 0;
-  width:200px;
-  font-size: 11px;
-  -webkit-transform: rotate( 90deg );
-      -ms-transform: rotate( 90deg );
-          transform: rotate( 90deg );
-}
-
-/* dandara
--------------------------------------------------------------------------------*/
-.shape-triangle{
-  position: fixed;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-top: 180px solid transparent;
-  border-right: 100px solid transparent;
-  border-bottom: 180px solid #111;
-  border-left: 100px solid transparent; 
-}
-
-/* ruler
--------------------------------------------------------------------------------*/
-.ruler{ }
-.ruler-scale{
-  position: fixed;
-  top: 0;
-  width:5px;
-  height: 1px;
-  background-color: #111;
-}
-.ruler-scale:nth-child(odd){
-  width:7px;
-}
-.ruler-scale:nth-child(10n+1){
-  width:10px;
+  padding-left: 20px;
+  line-height: 1.8;
 }
